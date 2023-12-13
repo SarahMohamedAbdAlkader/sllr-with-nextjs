@@ -1,0 +1,47 @@
+/* @import 'styles/variables'; */
+.br-footer {
+  padding: 23px 0;
+  border-top: 1px solid gray;
+  color: gray;
+}
+
+.br-footer>div {
+  display: flex;
+  align-items: center;
+
+}
+
+.br-footer img {
+  width: 123px;
+  position: absolute;
+  right: calc(50% - 66px);
+}
+
+.br-footer .br-footer__vat-id.en {
+  position: absolute;
+  right: 160px;
+  left: unset;
+}
+
+.br-footer .br-footer__vat-id.ar,
+.br-footer .br-footer__vat-id.ar-sa {
+  position: absolute;
+  right: 160px;
+  left: unset;
+}
+
+
+/* @media only screen and (max-width: @md) {
+  .br-footer > div {
+    justify-content: space-between;
+    padding: 8px 12px 8px 12px;
+    .br-footer__vat-id.en,
+    .br-footer__vat-id.ar,
+    .br-footer__vat-id.ar-sa,
+    img {
+      position: relative;
+      right: unset;
+      left: unset;
+    }
+  }
+} */
