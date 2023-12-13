@@ -29,6 +29,13 @@ const BRPoweredBySllr = ({ intl }) => {
   }, [intl.locale]);
 
   return (
+    //   <Image
+    //   // src={`assets/images/${poweredBySllr}.svg`}
+    //   width={500}
+    //   height={500}
+    //   alt="Picture of the author"
+    // />
+
     <img
       alt="sllr"
       src={`/assets/images/${poweredBySllr}.svg`}

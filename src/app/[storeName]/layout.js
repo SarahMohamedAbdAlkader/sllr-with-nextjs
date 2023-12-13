@@ -32,7 +32,6 @@ export async function generateMetadata({ params }, parent) {
       title: storeInfo?.storeName,
       url: storeInfo?.storeLink,
     },
-    // keywords: blog.keywords,
   };
 }
 
