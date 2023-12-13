@@ -31,6 +31,9 @@ export async function generateMetadata({ params }, parent) {
     openGraph: {
       title: storeInfo?.storeName,
       url: storeInfo?.storeLink,
+      images: [storeDesignData?.variables?.favIcon || storeInfo?.profileImage],
+      alt: "Store Image",
+      type: 'website',
     },
   };
 }

@@ -42,6 +42,17 @@ export async function generateMetadata({ params }, parent) {
     openGraph: {
       title: productDetails?.name,
       url: `https:sllr.co/${params.storeName}/${productId}`,
+      images: [
+        {
+          url:
+            productDetails?.productsVariances?.[0]?.variantDefaultImage ||
+            productDetails?.defaultImage,
+          width: 800,
+          height: 600,
+          alt: "Product Image",
+          type: 'website',
+        },
+      ],
     },
   };
 }
