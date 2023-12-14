@@ -32,7 +32,12 @@ const fetchData = async ({ result, page }) => {
 };
 
 export default async function Sitemap(params) {
-  let result = [];
+  let result = [
+    {
+      url: `https://sllr.co`,
+      lastModified: new Date(),
+    },
+  ];
   let page = 1;
   await fetchData({ result, page });
   console.log("he", result.length, page);
